@@ -1,0 +1,4 @@
+.wrapper{width: 10%; margin: 50px auto; border: 1px solid;}
+.childBlocks{width: 22%; float: left; background:blue; text-align: center; margin:0 1.5%;}
+.childBlocks:nth-child(2n+1){background: green;}
+.clearFix{clear: both;}

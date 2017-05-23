@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web App Player</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<!-- Scripts -->
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+	<script src="js/Chart.min.js"></script>
+	<script src="js/jquery.sparkline.min.js"></script>
+	<script src="js/canvasjs.min.js"></script>
+	<script src="js/jquery.canvasjs.min.js"></script>
+
+	<script src="js/script.js"></script>
+
+	
+</head>
+<body>
+	<div class="wrapper row">
+		<div class="left-sidebar col-md-2">
+			<ul>
+				<li class="profile left-sidebar-header">
+					<div class="wrapper">
+						<img src="images/profile.png" alt="">
+						<a href="index.html">
+							<div class="name">Rajeev Ranjan</div>
+							<div class="text-muted">
+								Web Developer
+								<span class="caret"></span>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="dashboard left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-th-large" aria-hidden="true"></i>
+						<span>Dashboard</span>
+						<img src="images/left-arrow.png" alt="">
+						<!-- <span class="fa fa-arrow-left"></span> -->
+					</a>
+				</li>
+				<li class="left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-diamond" aria-hidden="true"></i>
+						<span>Layout</span>
+						
+					</a>
+				</li>
+				<li class="left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-bar-chart" aria-hidden="true"></i>
+						<span>Graphs</span>
+						<img src="images/left-arrow.png" alt="">
+					</a>
+				</li>
+				<li class="left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<span>Mailbox</span>
+						<span class="label label-warning">16/24</span>
+						
+					</a>
+				</li>
+				<li class="left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-pie-chart" aria-hidden="true"></i>
+						<span>Metrics</span>
+						
+					</a>
+				</li>
+				<li class="left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-flask" aria-hidden="true"></i>
+						<span>Widgets</span>
+						
+					</a>
+				</li>
+				<li class="left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-edit" aria-hidden="true"></i>
+						<span>Forms</span>
+						<img src="images/left-arrow.png" alt="">
+					</a>
+				</li>
+				<li class="left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-desktop" aria-hidden="true"></i>
+						<span>App Views</span>
+						<span class="label label-primary">SPECIAL</span>
+						
+					</a>
+				</li>
+				<li class="left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-files-o" aria-hidden="true"></i>
+						<span>Other Pages</span>
+						<img src="images/left-arrow.png" alt="">
+					</a>
+				</li>
+				<li class="left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-globe" aria-hidden="true"></i>
+						<span>Miscellaneous</span>
+						<span class="label label-primary" style="background-color:#23C6C8">NEW</span>
+					</a>
+				</li>
+				<li class="left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-flask" aria-hidden="true"></i>
+						<span>UI Elements</span>
+						<img src="images/left-arrow.png" alt="">
+					</a>
+				</li>
+				<li class="left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-laptop" aria-hidden="true"></i>
+						<span>Grid Options</span>
+						
+					</a>
+				</li>
+				<li class="left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-table" aria-hidden="true"></i>
+						<span>Tables</span>
+						<img src="images/left-arrow.png" alt="">
+					</a>
+				</li>
+				<li class="left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+						<span>E-commerce</span>
+						<img src="images/left-arrow.png" alt="">
+					</a>
+				</li>
+				<li class="left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-picture-o" aria-hidden="true"></i>
+						<span>Gallery</span>
+						<img src="images/left-arrow.png" alt="">
+					</a>
+				</li>
+				<li class="left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-sitemap" aria-hidden="true"></i>
+						<span>Menu Levels</span>
+						<img src="images/left-arrow.png" alt="">
+					</a>
+				</li>
+				<li class="left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-magic" aria-hidden="true"></i>
+						<span>CSS Animation</span>
+						<span class="label label-primary" style="background-color:#23C6C8">62</span>
+					</a>
+				</li>
+				<li class="landing-page left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<span>Landing Page</span>
+						<span class="label label-warning">NEW</span>
+					</a>
+				</li>
+				<li class="package left-sidebar-element">
+					<a href="#">
+						<i class="fa fa-database" aria-hidden="true"></i>
+						<span>Package</span>
+						
+					</a>
+				</li>
+			</ul>	
+		</div>
+		<div class="main-content col-md-10">
+			<div class="navbar">
+				<span class="navbar-header">
+					<i class="fa fa-bars btn btn-primary" aria-hidden="true"></i>
+					<input type="text" placeholder="Search for something">
+				</span>
+				<span class="navbar-right">
+					<span>Welcome to INSPINIA + Admin Theme</span>
+					<span><i class="fa fa-envelope" aria-hidden="true"><span class="label label-warning">16</span></i></span>
+					<span><i class="fa fa-bell" aria-hidden="true"><span class="label label-warning">16</span></i></span>
+					<span>
+						<i class="fa fa-sign-out" aria-hidden="true"></i>
+						Sign Out
+					</span>
+					<span><i class="fa fa-tasks" aria-hidden="true"></i></span>
+				</span>
+			</div>
+			<div class="dashboard-header row">
+				<div class="col-md-3">
+					<div class="top-bar">
+						<div class="heading">Welcome Amelia</div>
+						<small>You have 36 notifications and 6 messages.</small>
+					</div>
+					<ul class="list-group">
+						<li class="list-group-item">
+							<span class="pull-right">09:00 pm</span>
+							<span class="label label-success">1</span>
+							<span>Please contact me</span>
+						</li>
+						<!-- <hr> -->
+						<li class="list-group-item">
+							<span class="pull-right">10:00 pm</span>
+							<span class="label label-info">2</span>
+							<span>Sign a contract</span>
+						</li>
+						<li class="list-group-item">
+							<span class="pull-right">03:40 pm</span>
+							<span class="label label-primary">3</span>
+							<span>Open new shop</span>
+						</li>
+						<li class="list-group-item">
+							<span class="pull-right">12:10 pm</span>
+							<span class="label label-default">4</span>
+							<span>Call back to sylvia</span>
+						</li>
+						<li class="list-group-item">
+							<span class="pull-right">04:00 pm</span>
+							<span class="label label-primary">5</span>
+							<span>Write a letter to Sandra</span>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6 graph">
+					<div id="graph1" style="width:500px;height:200px"></div>
+					<!-- <img src="images/graph.png" alt=""> -->
+					<div class="row">
+						<span class="col-sm-4">
+							<h4>$406,100</h4>
+							<small>Sales marketing report</small>
+						</span>
+						<span class="col-sm-4">
+							<h4>$150,100</h4>
+							<small>Annual sales revenue</small>
+						</span>
+						<span class="col-sm-4">
+							<h4>$16,870</h4>
+							<small>Half-year revenue margin</small>
+						</span>
+					</div>
+				</div>
+				<div class="col-md-3 third">
+					<h4 class="heading">Project Beta Progress</h4>
+					<div>You have two projects with no complete task</div>
+					<div class="charts">
+						<!-- <div id="chart1" class="chartContainer"></div>
+						<div id="chart2" class="chartContainer"></div> -->
+
+						<div><img class="chartContainer" src="images/ring1.png" alt=""></div>
+						<div><img class="chartContainer" src="images/ring1.png" alt=""></div>
+						<div class="clear-fix"></div>	
+						<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+					</div>
+				</div>
+			</div>
+
+			<div class="dashboard-mainContent row">
+				<div class="col-md-4">
+					<div class="wrapper">
+						<div class="head">
+							<span class="heading">New Data for the report</span>
+							<span class="label label-success">IN+</span>
+							<span class="pull-right">
+								<i class="fa fa-chevron-up" aria-hidden="true"></i>
+								<i class="fa fa-wrench" aria-hidden="true"></i>
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</span>
+
+						</div>
+						<hr>
+						<div class="body">
+							<div class="pull-right">
+								<img src="images/report.png" alt="">
+								<div>$20, 000</div>
+							</div>
+							<div>
+								<h5><b>NSY report new data!</b></h5>
+								<small>Check the stock price</small>
+							</div>
+						</div>
+					</div>
+					<div class="wrapper">
+						<div class="head">
+							<span class="heading">Read below comments</span>
+							<span class="pull-right">
+								<i class="fa fa-chevron-up" aria-hidden="true"></i>
+								<i class="fa fa-wrench" aria-hidden="true"></i>
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</span>
+						</div>
+						<hr>
+						<div class="body">
+							<span>
+								<a href="#">@Alan Mary</a>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum dummy text.</span>
+							</span>
+							<div>
+								<span class="fa fa-clock-o"></span>
+								<small>1 minute ago</small>
+							</div>
+						</div>
+						<hr>
+						<div class="body">
+							<div>
+								<a href="#">@Stock man</a>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia totam nobis voluptates.</span>
+							</div>
+							<div id="sparkline"></div>
+							<div>
+								<span class="fa fa-clock-o"></span>
+								<small>2 hours ago</small>
+							</div>
+						</div>
+						<hr>
+						<div class="body">
+							<span>
+								<a href="#">@Kevin Smith</a>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+							</span>
+							<div>
+								<span class="fa fa-clock-o"></span>
+								<small>1 minute ago</small>
+							</div>
+						</div>
+						<hr>
+						<div class="body">
+							<span>
+								<a href="#">@Jonathan Fabrick</a>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+							</span>
+							<div>
+								<span class="fa fa-clock-o"></span>
+								<small>1 minute ago</small>
+							</div>
+						</div>
+						<hr>
+						<div class="body">
+							<span>
+								<a href="#">@Alan Mary</a>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem Ipsum dummy text.</span>
+							</span>
+							<div>
+								<span class="fa fa-clock-o"></span>
+								<small>2 minute ago</small>
+							</div>
+						</div>
+						<hr>
+						<div class="body">
+							<span>
+								<a href="#">@Kevin Smith</a>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+							</span>
+							<div>
+								<span class="fa fa-clock-o"></span>
+								<small>3 minute ago</small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="wrapper">
+						<div class="head">
+							<span class="heading">Your daily feed</span>
+							<span class="pull-right">
+								<span class="label label-warning">10 Messages</span>
+
+							</span>
+						</div>
+						<hr>
+						<div class="body">
+							<div class="body-element">
+								<a href=""><img src="images/p1.png" alt=""></a>
+								<div class="body-content">
+									<div class="pull-right"><small>5m ago</small></div>
+									<strong>Monica Smith</strong>
+									<span>Posted a new blog</span>
+									<div><small>Today 05:10 pm - 12.6.2015</small></div>
+								</div>	
+								<div class="clear-fix"></div>
+							</div>
+							<hr>
+							<div class="body-element">
+								<a href=""><img src="images/p2.png" alt=""></a>
+								<div class="body-content">
+									<div class="pull-right"><small>2h ago</small></div>
+									<strong>Mark Johnson</strong>
+									<span>Posted message on <b>Monica Smith</b>.</span>
+									<div><small>Today 03:20 pm - 12.6.2015</small></div>
+								</div>	
+								<div class="clear-fix"></div>
+							</div>
+							<hr>
+							<div class="body-element">
+								<a href=""><img src="images/p3.png" alt=""></a>
+								<div class="body-content">
+									<div class="pull-right"><small>2h ago</small></div>
+									<strong>Sara Jane</strong>
+									<span>added 1 photo on <b>Monica Smith</b></span>
+									<div><small>2 days ago at 08:30 pm</small></div>
+								</div>	
+								<div class="clear-fix"></div>
+							</div>
+							<hr>
+							<div class="body-element">
+								<a href=""><img src="images/p4.png" alt=""></a>
+								<div class="body-content">
+									<div class="pull-right"><small>5m ago</small></div>
+									<strong>Chris Jonathan Overtunk</strong>
+									<span>started following <b>Monica Smith</b></span>
+									<div><small>Yesterday 01:25 pm - 11.6.2015</small></div>
+									<div class="action">
+										<a href="#" class="btn btn-xs ">
+											<i class="fa fa-thumbs-up"></i>
+											Like
+										</a>
+										<a href="#" class="btn btn-xs">
+											<i class="fa fa-heart"></i>
+											Love
+										</a>
+									</div>
+								</div>	
+								<div class="clear-fix"></div>
+							</div>
+							<hr>
+							<div class="body-element">
+								<a href=""><img src="images/p5.png" alt=""></a>
+								<div class="body-content">
+									<div class="pull-right"><small>2h ago</small></div>
+									<strong>Kim Smith</strong>
+									<span>Posted a message on <b>Monica Smith</b> site.</span>
+									<div><small>Yesterday 05:10 pm - 12.6.2015</small></div>
+									<div class="well">
+										<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe commodi, soluta, aspernatur, maiores error id praesentium tenetur, ratione aliquam repellendus itaque? Temporibus libero ab vero similique mollitia corrupti ut, voluptatem.</small>
+									</div>
+									<div class="action">
+										<a href="#" class="btn btn-xs pull-right">
+											<i class="fa fa-thumbs-up"></i>
+											Like
+										</a>
+									</div>
+								</div>	
+								<div class="clear-fix"></div>
+							</div>
+							<hr>
+							<div class="body-element">
+								<a href=""><img src="images/p1.png" alt=""></a>
+								<div class="body-content">
+									<div class="pull-right"><small>23h ago</small></div>
+									<strong>Johnson Smith </strong>
+									<span>love <b>Monica Smith</b></span>
+									<div><small>2 days ago at 05:10 pm - 11.6.2015</small></div>
+								</div>	
+								<div class="clear-fix"></div>
+							</div>
+							<hr>
+							<div class="body-element">
+								<a href=""><img src="images/p2.png" alt=""></a>
+								<div class="body-content">
+									<div class="pull-right"><small>5m ago</small></div>
+									<strong>Mike Johnson</strong>
+									<span>started following <b>Monica Smith</b></span>
+									<div><small>Today 05:10 pm - 12.6.2015</small></div>
+								</div>	
+								<div class="clear-fix"></div>
+							</div>
+							<hr>
+							<div class="body-element">
+								<button class="btn btn-primary">
+									<i class="fa fa-arrow-down"></i>
+									Show More
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="wrapper">
+						<div class="head">
+							<span class="heading">Alpha Project</span>
+							
+							<span class="pull-right">
+								<i class="fa fa-chevron-up" aria-hidden="true"></i>
+								<i class="fa fa-wrench" aria-hidden="true"></i>
+								<i class="fa fa-times" aria-hidden="true"></i>
+
+							</span>
+						</div>
+						<hr>
+						<div class="body">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="clear-fix"></div>
+		<div id="theContainer"></div>		
+	</div>
+
+<script type="text/javascript">
+	window.onload = function () {
+	var chart = new CanvasJS.Chart("chart1",
+	{
+		title:{
+			text: "Kolter",
+		},
+		data: [
+		{
+			type: "doughnut",
+			dataPoints: [
+				{ y: 85},
+				{ y: 70},
+				{ y: 27}
+			]
+		}
+		]
+	});
+	chart.render();
+
+	var chart = new CanvasJS.Chart("chart2",
+	{
+		title:{
+			text: "Maxtor",
+		},
+		data: [
+		{
+			type: "doughnut",
+			dataPoints: [
+				{ y: 85},
+				{ y: 70},
+				{ y: 27}
+			]
+		}
+		]
+	});
+	chart.render();
+}
+
+window.onload = function () {
+    var chart = new CanvasJS.Chart("graph1",
+    {
+      title:{
+        text: ""
+      }, 
+      animationEnabled: true,              
+      data: [
+      {        
+        type: "splineArea",
+        color: "#A3E1D4",
+
+        dataPoints: [
+        {y: 0},{y: 6},{y: 4},{y: 10},{y: 3},{y: 15},{y: 5},{y: 1},{y: 7},{y: 30},{y: 10},{y: 12},{y: 5}
+        ]
+      },
+      {        
+        type: "splineArea",
+        color: "#6DBCCE",
+        dataPoints: [
+        {y: 1},{y: 2},{y: 1},{y: 3},{y: 2},{y: 3},{y: 2},{y: 1},{y: 3},{y: 5},{y: 1},{y: 2},{y: 1}            
+        ]
+      }             
+      
+      ]
+    });
+
+    chart.render();
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skill Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+</head>
+<body>
+   
+    <div id="wrapper">
+        <div class="skill_name" id="skill_html">HTML</div>
+        <div class="skillbar_wrapper">
+            <div class="skillbar_bar" id="skillbar_html"></div>
+            <div class="skillbar_percent">85%</div>
+        </div>
+
+        <div class="skill_name" id="skill_css">CSS</div>
+        <div class="skillbar_wrapper">
+            <div class="skillbar_bar" id="skillbar_css"></div>
+            <div class="skillbar_percent">70%</div>
+        </div>
+
+        <div class="skill_name" id="skill_jscript">JS</div>
+        <div class="skillbar_wrapper">
+            <div class="skillbar_bar" id="skillbar_jscript"></div>
+            <div class="skillbar_percent">65%</div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#skillbar_html").animate({width:'85%'},1500);
+            $("#skillbar_css").animate({width:'70%'},1500);
+            $("#skillbar_jscript").animate({width:'65%'},1500);
+        });
+    </script>
+</body>
+</html>

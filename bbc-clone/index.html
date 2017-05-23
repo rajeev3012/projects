@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BBC - Homepage</title>
+    
+    <style>
+        #topbar{
+            width:100%;
+            margin:0 auto;
+            height:40px;
+            background-color:black;
+            position:fixed;
+        }
+        body{
+            margin:0px;
+            padding:0px;
+            background-color:forestgreen;
+            position:relative;
+        }
+        #bbc-logo{
+            width:85px;
+            height:26px;
+            float:left;
+            margin:7px 15px;
+        }
+        #signin-logo{
+            height:21px;
+            margin:10px 0px 5px 12px;
+            float:left;
+        }
+        #signin-text{
+            float:left;
+            margin-top:1px;
+            margin-left:-15px;
+            
+        }
+        #signin-section{
+            width:170px;
+        }
+        .topbar-section{
+            float:left;
+            height:100%;
+            border-left:1px solid grey;
+            cursor:pointer;
+        }
+        .topbar-menu{
+            color:white;
+            font-weight:bold;
+            font-family: sans-serif;
+            font-size: 85%;
+            line-height:40px;
+            padding:0px 18px;
+        }
+        #searchbox{
+            float:left;
+            margin:7px 15px;
+            width:175px;
+            height:22px;
+            font-weight: bold;
+            padding-left:5px;
+        }
+        #more-arrow{
+            width:15px;
+            margin-left:50px;   
+        }
+        #more-section{
+            width:110px;
+            border-right:1px solid grey;
+        }
+        
+        input[type="text"]{
+            background-image:url(images/magnifying-glass.PNG);
+            background-repeat:no-repeat;
+            background-position:right;
+            background-size:22px;
+            border:none;
+        }
+        #menubar{
+            width:300px;
+            height:1000px;
+            background-color:darkgreen;
+            font-size:100px;
+            padding:20px;
+        }
+        .thumbnails{
+            width:875px;
+            height:300px;
+            border:1px solid grey;
+            position:absolute;
+            top:70px;
+            left:350px;
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="topbar">
+        <img id="bbc-logo"  src="images/logo.PNG" alt="bbc-logo">
+        <div class="topbar-section" id="signin-section">
+            <img id="signin-logo" src="images/signin_logo.PNG" alt="SignIn logo">
+            <span id="signin-text" class="topbar-menu">Sign In</span>
+        </div>
+        <div class="topbar-section topbar-menu">News</div>
+        <div class="topbar-section topbar-menu">Sport</div>
+        <div class="topbar-section topbar-menu">Weather</div>
+        <div class="topbar-section topbar-menu">Shop</div>
+        <div class="topbar-section topbar-menu">Earth</div>
+        <div class="topbar-section topbar-menu">Travel</div>
+        <div class="topbar-section topbar-menu">Capital</div>
+        <div class="topbar-section topbar-menu">Culture</div>
+        <div class="topbar-section topbar-menu" id="more-section">
+            More
+            <img id="more-arrow" src="images/more-arrow.PNG" alt="">
+        </div>
+        <div>
+            <input id="searchbox" type="text" value="Search">
+        </div>
+    </div>
+    <div id="menubar">
+        Hello this
+        
+        is
+        
+        what
+        
+        ??
+        ?
+        
+    </div>
+    <div class="thumbnails"></div>
+    <div class="thumbnails"></div>
+</body>
+</html>

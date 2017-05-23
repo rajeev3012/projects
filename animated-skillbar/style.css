@@ -1,0 +1,64 @@
+body{
+        text-align:center;
+        font-family:sans-serif;
+        width:900px;
+        margin:auto 0;
+        padding:0;
+        background-color:#CED8F6;
+    }
+#wrapper{
+        margin:20px 0px;
+        padding:0px;
+        text-align:center;
+        width:900px;
+    }
+.skill_name{
+        margin-left:250px;
+        width:70px;
+        height:40px;
+        clear:bot;
+        float:left;
+        border-radius:5px 0px 0px 5px;
+        font-size:15px;
+        color:white;
+        line-height:35px;
+    }
+.skillbar_wrapper{
+        width:400px;
+        height:40px;
+        position:relative;
+        display:block;
+        float:left;
+        margin-bottom:20px;
+        background-color:#E6E6E6;
+        border-radius:0px 5px 5px 0px;
+    }
+#skill_html{
+        background-color:green;
+    }
+#skill_css{
+        background-color:orangered;
+    }
+#skill_jscript{
+        background-color:dodgerblue;
+    }
+.skillbar_bar{
+        width:0px;
+        height:40px;
+        border-radius:0px 5px 5px 0px;
+    }
+#skillbar_html{
+        background-color:limegreen;
+    }
+#skillbar_css{
+        background-color:orange;
+    }
+#skillbar_jscript{
+        background-color:skyblue;
+    }
+.skillbar_percent{
+        position:absolute;
+        right:10px;
+        top:0px;
+        line-height:35px;
+    }

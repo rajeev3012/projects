@@ -1,0 +1,148 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+.header{
+	/*border:1px solid red;*/
+	width:830px;
+	margin:auto;
+}
+#logo{
+    float:left;
+    width:300px;
+    padding:5px;
+    margin:auto 30px;
+}
+#menu{
+/*    border:1px solid green;*/
+    float:right;
+    margin:30px auto;
+}
+.menu-item{
+    float:left;
+    border-left:1px solid grey;
+    padding:0px 5px;
+}
+.menu-header{
+    font-size:13px;
+    font-weight:bold;
+}
+.menu-desc{
+    font-family:sans-serif;
+    font-size:10px;
+}
+.main{
+    height:280px;
+    background-color:black;
+}
+#main-img{
+    width:833px;
+    display:block;
+    margin:auto;
+    /*position:relative;*/
+}
+.content{
+	width:890px;
+	margin:auto;
+	margin-top:40px;
+    /*border:1px solid red;*/
+}
+.content .heading{
+	font-weight:bold;
+	font-size:30px;
+	text-align:center;
+}
+.article{
+    /*border:1px solid green;*/
+    height:400px;
+    width:285px;
+    float:left;
+    margin:15px 5px;
+}
+.article-sec1 .heading{
+	font-size:17px;
+	font-weight:bold;
+	color:#0183A9;
+	text-align:left;
+}
+.article-sec1 .sub-heading{
+	font-family:sans-serif;
+	font-size:12px;
+	color:#BBB9B9;
+}
+.article-sec1 .big-image{
+    width:inherit;
+    margin:15px 0px;
+}
+.article-sec1 .description{
+	font-size:80%;
+	padding:5px;
+	font-family:sans-serif;
+	margin-bottom:30px;
+}
+.article-sec1 .btn{
+	margin-bottom:0px;
+}
+.article-sec2 .heading{
+	font-size:17px;
+	text-align:left;
+}
+.article-sec2 .submit{
+	padding:8px;
+	width:150px;
+	background-color:#3784ED;
+	margin-top:12px;
+}
+#social-conn p{
+    font-size:80%;
+    font-family:sans-serif;
+}
+#social-conn .images{
+	margin:5px 0px 65px 5px;
+}
+#social-conn img{
+    width:50px;
+}
+.input{
+    margin:7px 0px;
+    width:95%;
+    padding:5px;
+}
+#newsletter input{
+	padding:6px;
+	width:93%;
+}
+#news .section{
+	margin:20px auto;
+	/*border-bottom:1px solid black;*/
+}
+#news img{
+	float:left;
+	margin-top:-5px;
+	margin-right:5px;
+}
+
+#news .news-content{
+    font-family: sans-serif;
+    font-size:80%;
+    margin-left: 20px;
+}
+.footer{
+    background-color:dimgrey;
+    border-top:10px solid #887B6C;
+    height:200px;
+}
+h2{
+    text-align:center;
+}
+#social-conn input{
+    width:95%;
+    padding:5px;
+}
+.clearFix{
+	clear:both;
+}
+#newsletter{
+	/*border:1px solid black;*/
+
+}
