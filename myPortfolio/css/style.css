@@ -61,7 +61,7 @@ hr.star-primary:after {
 header {
   text-align: center;
   background: #18BC9C;
-  background-image:url("../img/garden.jpg");
+  background-image:url("../img/background.jpg");
   background-size:cover;
   color: white;
 }
@@ -102,6 +102,7 @@ header .intro-text .skills {
   text-transform: uppercase;
   font-weight: 700;
   border: none;
+  opacity:0.9;
 }
 .navbar-custom a:focus {
   outline: none;
